@@ -1,0 +1,157 @@
+
+body{
+    overflow-y: auto;
+    overflow-x : hidden;
+    height : 3000px;
+}
+#header{
+  position : fixed;
+  width:100%;
+  z-index : 2;
+}
+#header.header-transparent {
+  background: transparent;
+}
+.navbar {
+  display:flex;
+    z-index: 2;
+    align-items: center;
+    justify-content:center;
+  } 
+.navbar_log {
+    display : flex;
+    padding: 0;
+    height: 70px;
+    z-index: 2;
+  }
+  .navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style : none;
+    align-items: center;
+  }
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 32px;
+  margin-left: 80px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-shadow: #b6c7cf;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1026px){
+  #header {
+    flex-direction: column;
+  }
+  .navbar ul{
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+  }
+  .navbar li{
+    width : 30%;
+    text-align: center;
+  }
+}
+/*hero*/
+#hero{
+  height : 100vh;
+  display : flex;
+  margin : 0;
+  align-items: center;
+}
+.hero-container{
+  padding-top: 800px;
+  padding-left : 800px;
+}
+.video {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width: 100%;
+  height: 110vh;
+  overflow : hidden;
+  z-index: 1;
+  
+}
+.video video{
+  width: 100%;
+  height: auto;
+  z-index : 1;
+}
+
+.video-text{
+  height : 100vh;
+  width: 100vh;
+  opacity: 0.85s;
+  text-align: center;
+  z-index : 2;
+}
+.video-text h1{
+font-weight: 700;
+font-size : 30px;
+line-height: 100px;
+}
+.video-text h2{
+font-weight: 600;
+font-size :25px;
+}
+/*ABOUT*/
+#about{
+ background-image: url("../img/소개이미지1.jpg");
+ background-size: cover;
+}
+.row-text-center{
+  text-align: center;
+  padding-top : 50px;
+}
+.about h3{
+  font-size : 20px;
+  font-weight: 800;
+}
+.about h4{
+  font-size : 15px;
+  font-weight : 500;
+}
+.col-5 img{
+  width: 100%; 
+  height: 90%;
+}
+.col-7 img{
+  width: 100%; 
+  height: 90%;
+}
+/*Team*/
+#team .container{
+  padding: 30px;
+  box-shadow: inset 0 0 10px red, 0 0 10px blue;
+}
+#team .container .title{
+  padding-bottom:30px;
+  font-size: 40px;
+  text-align: center;
+}
+.slide h3{
+  margin-top:10px;
+  text-align: center;
+}
+/*footer*/
+.footer-box{
+  background-color: white;
+  width : 100%;
+  padding : 30px;
+  margin : 0;
+}
+.footer-box a img{
+ width : 50px;
+}
+.footer-box p{
+  font-size: 20px;
+  color : black;
+}
