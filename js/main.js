@@ -1,3 +1,18 @@
+/*loading*/
+/*const loader = document.quarySelector('.loader');
+const main = document.quarySelector('main');
+
+function init(){
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+
+        main.style.display = 'block';
+        setTimeout(() => (main.style.opacity = 1), 50);
+    }, 4000);
+}
+
+init();*/
 //스크롤 헤더 이벤트//
 $(function () {
     var didScroll;
@@ -84,4 +99,31 @@ $(document).ready(function(){
     });
   });
 
-  /*헤더 스크롤*/
+/*fade in
+let observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+     if(entry.isIntersecting){
+         document.querySelectorAll(".row")[0].classList.add("fadeInRight")
+         document.querySelectorAll(".row")[1].classList.add("fadeInRight")
+         document.querySelectorAll(".row")[2].classList.add("fadeInRight")
+     }
+ })
+})
+
+observer.observer(document.querySelector("#about"));*/
+
+/*fade in*/
+
+/*scroll event*/
+let mainText = document.querySelector(".row .col-8 h3, h4")
+
+window.addEventListener('scroll',function(){
+    let value = window.scrollY
+    console.log("scrollY",value);
+
+    if(value>600){
+        document.querySelectorID(".row .col-8 h3, h4").style.animation = 'slide 1s ease-in forwards'
+    }else {
+        document.querySelectorID(".row .col-8 h3, h4").style.animation = 'disappear 1s ease-in'
+    }
+});
