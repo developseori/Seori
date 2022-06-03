@@ -121,9 +121,9 @@ window.addEventListener('scroll',function(){
     let value = window.scrollY
     console.log("scrollY",value);
 
-    if(value>600){
-        document.querySelectorID(".row .col-8 h3, h4").style.animation = 'slide 1s ease-in forwards'
+    if(scrollY>600){
+        mainText.getElementsByClassName(".row .col-8 h3, h4") = 'slide ease-in forwards'
     }else {
-        document.querySelectorID(".row .col-8 h3, h4").style.animation = 'disappear 1s ease-in'
+        mainText.getElementsByclassName(".row .col-8 h3, h4") = 'slide ease-out'
     }
 });

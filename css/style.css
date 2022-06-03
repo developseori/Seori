@@ -191,11 +191,12 @@ img{
 .row .col-8 h3, h4{
   color:black;
   text-shadow: #FC0 1px 0 10px;
-  animation : slide 0.5s;
+  animation : slide 1s;
 }
 @keyframes slide{
   from{
    margin-left : -300px;
+   opacity : 0;
   }
   to{
     margin-left : 0px;
@@ -303,16 +304,27 @@ body:hover span {
 }
 /*Career*/
 .career{
+display:flex;
 margin-top:50px;
 margin-left:100px;
+margin-right:100px;
 color:black;
 font-weight: 700;
 }
+.img-career img{
+  width:60%;
+  height:100%;
+  border-radius: 20%;
+}
+.text-career{
+  background:whitesmoke;
+  border-radius: 20%;
+}
 .text-career h2{
-  font-size : 70px;
+  font-size : 50px;
 }
 .text-career span{
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /*footer*/
