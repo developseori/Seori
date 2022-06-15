@@ -1,14 +1,33 @@
-@media screen and (max-width: 1026px){
-    #header {
-      flex-direction: column;
-    }
-    .navbar ul{
-      flex-direction: column;
-      align-items: center;
-      width:30%;
-    }
-    .navbar li{
-      width : 30%;
-      text-align: center;
-    }
+@media screen and(max-width:1024px) {
+  body {
+    width:100%;
+    margin:auto;
   }
+}
+
+
+
+
+
+@media screen and (max-width: 570px) {
+  body {
+    width:100%;
+    height:auto;
+    padding:0;
+  } 
+  #header {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+  }
+  .navbar li{
+    width : 30%;
+    text-align: center;
+  }
+  .video-text {
+    font-size: 20px;
+  }
+}
